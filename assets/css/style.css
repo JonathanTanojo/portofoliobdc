@@ -1,0 +1,385 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+}
+
+section {
+  height: 100vh;
+}
+
+.picture{
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+}
+
+.picture h6{
+  margin: 0px;
+  font-size: 40px;
+  font-family: "nunito";
+}
+
+.picture h1{
+  font-size: 90px;
+  font-family: "nunito";
+}
+.nama p{
+  margin-bottom: 20px;
+  font-size: 35px;
+  font-family: "Poppins";
+}
+.typed-text{
+  color: #af5607;
+  font-family: "Poppins";
+}
+.cursor{
+  display: inline-block;
+  width: 3px;
+  background-color: white ;
+  margin-left: 0.1rem;
+  animation: blink 1s infinite;
+}
+.cursor .typing{
+  animation: none;
+}
+@keyframes blink{
+  0%{background-color:white ;}
+  49%{background-color:white ;}
+  50%{background-color: transparent ;}
+  99%{background-color:white ;}
+  100%{background-color:white ;}
+}
+.picture .button{
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  border: white 2px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+
+.picture .button:hover{ 
+  background-color: #dc965a;
+  border: white 2px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: monospace;
+}
+.topnav {
+  overflow: hidden;
+  font-size: 40px;
+  font-family:  'Poppins', sans-serif;
+  background-color: #dc965a;
+  padding: 10px 10px 10px 10px;
+  
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;  
+}
+
+.topnav a:hover {
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav_right{
+  float: right;
+  
+}
+.column {
+  float: left;
+  width: 45%;
+  padding: 10px;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+
+/* .halfbackground {
+  width: 45%;
+  height: 100vh;
+  background-color: #dc965a; 
+} */
+
+.img {
+  margin-top: 30px;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
+.gambar{
+  margin-left: 100px;
+  max-width: 100%; 
+  max-height: 850px; 
+  height: auto;
+  display: block;  
+}
+.portofolio{
+  background-color: #fff5ec;
+}
+.textaligncenter{
+  padding-top: 10px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.textaligncenter h1{
+  font-family: "nunito";
+  font-size: 75px;
+
+}
+.footerwhite{
+  position: bottom;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff5ec;
+  color: rgb(0, 0, 0);
+  text-align: center;
+
+}
+.footer{
+  font-family: "Poppins";
+  margin-top: 15px;
+  text-align: center;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #dc965a;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 2px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #d17e35;
+}
+
+.spasi{
+  margin-bottom: 20px;
+}
+.portofolio .button{
+  margin-top: 5px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #dc965a;
+  border: #dc965a 2px solid;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-family: "Poppins";
+}
+.portofolio .button:hover{
+  background-color: #dc965a;
+  color: white;
+  border: #dc965a 2px solid;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.column h2{
+  margin-top: 180px;
+  margin-left: 220px;
+  font-size: 75px;
+  font-family: "nunito";
+  text-align: center;
+  align-items: center;
+}
+.column p{
+  margin-top: 180px;
+  margin-left: 220px;
+  font-size: 20px;
+  font-family: "Poppins";
+  text-align: center;
+  align-items: center;
+}
+.spasi p{
+  font-family: "Poppins";
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  overflow: auto;
+}
+.gallery{
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 390px;
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+.desc{
+  padding: 15px;
+  text-align: center;
+  font-family: "Poppins";
+  border: #dc965a 1px solid;
+}
+
+.contact h2{
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 40px;
+}
+.contact .text{
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 20px;
+}
+.format{
+  font-family: "Poppins";
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+
+}
+
+.column1 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 51.5vh;
+}
+.negah{
+  margin-top: 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .contact-content .column{
+  width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+  text-align: justify;
+}
+.contact .contact-content .left .icons{
+  margin: 10px 0;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color: crimson;
+}
+.contact .contact-content .info .head{
+  font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+  color: #333;
+}
+.contact .fields{
+  display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+  height: 45px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .textarea{
+  height: 80px;
+  width: 100%;
+}
+.contact .name{
+  margin-right: 10px;
+}
+.contact .field input,
+.contact .textarea textarea{
+  height: 100%;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.contact .field input:focus,
+.contact .textarea textarea:focus{
+  border-color: #b3b3b3;
+}
+.contact .textarea textarea{
+padding-top: 10px;
+resize: none;
+}
+.contact .button-area{
+display: flex;
+align-items: center;
+}
+.button-area button{
+color: #fff;
+display: block;
+width: 160px!important;
+height: 45px;
+outline: none;
+font-size: 18px;
+font-weight: 500;
+border-radius: 6px;
+cursor: pointer;
+flex-wrap: nowrap;
+background: #dc965a;
+border: 2px solid #fff5ec;
+transition: all 0.3s ease;
+}
+.button-area button:hover{
+color: #dc965a;
+border: 3px solid #dc965a;
+background: none;
+
+}

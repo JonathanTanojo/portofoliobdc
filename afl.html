@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Jonathan</title>
+    <!-- Link CSS -->
+    <link href="assets/css/style.css" rel='stylesheet'>
+    <!--Link Poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!--Link Nunito-->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap" rel="stylesheet">
+    <!-- javascript -->
+    <script src="assets/js/script.js" async></script>
+    <!-- portofolio css -->
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
+    <!-- portofolio js -->
+    <script src="assets/js/lightbox-plus-jquery.min.js"> </script>
+    <!-- arrow up -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+    <div class="topnav">
+        <a class = "active" href="#";>
+            Home
+        </a>
+        <div class="topnav_right">
+            <a href="#about">About Me</a>
+            <a href="#portofolio">Portofolio</a>
+            <a href="#contact">Contact Me</a>
+        </div>
+        
+    </div>
+    <!-- Home Page -->
+    <section class="picture" id = home>
+        <div class="nama">
+            <h6> Hi There, I'm </h6>
+            <h1>Jonathan Isaac Tanojo</h1>
+            <p>And I am <span class="typed-text" style="font: bold;"></span><span class="cursor">&nbsp;</span></p>
+            <a href="#about" class="button">About Me</a>
+            <script>
+                  const typedTextSpan = document.querySelector(".typed-text")
+                  const textArray=["a Student","a Funny Guy","19 Years old Child"];
+                    const typingDelay = 200;
+                    const erassingDelay = 100;
+                    const newTextDelay = 1000;
+
+                    let textArrayIndex =0;
+                    let charIndex=0;
+
+                    function type(){
+                        if(charIndex <textArray[textArrayIndex].length){
+                            typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+                            charIndex++;
+                            setTimeout(type,typingDelay);
+                        }
+                        else{
+                            setTimeout(erase,typingDelay);
+                        }
+                    }
+                    function erase(){
+                        if(charIndex > 0){
+                            typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+                            charIndex--;
+                            setTimeout(erase,erassingDelay);
+                        } 
+                        else{
+                            textArrayIndex++;
+                            if(textArrayIndex>=textArray.length) textArrayIndex=0;
+                            setTimeout(type,typingDelay + 1100);
+                        }         
+                    }
+                    document.addEventListener("DOMContentLoaded",function(){
+                        setTimeout(type,newTextDelay+250);
+                    })
+            </script>
+        </div>
+    </section>
+
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="assets/img/up-arrow.png" alt="up-arrow" width="25px" height="25px"></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- About Me Page -->
+    <section id = about>
+        <div class="column" style="background-color:#dc965a;">
+            <div class="img">
+                <img class="gambar" src="assets/img/85.JPG" alt="Personal">
+            </div>
+          </div>
+          <div class="column" style="background-color:#ffff;">
+            <h2>About Me</h2>
+            <p>Hi my name is Jonathan Isaac Tanojo. i'm a student at university ciputra at surabaya.i study Information System for Business. I was born in Surabaya,Indonesia at 6 October 2002 so now i'm 19 year old.Well my hobby is sleeping,eating, and playing some video games,but i still prefer to get mo spleep beacuse i feel if i dont have enought time to sleep i cant be more productive. Well this is my first website i hope u like it because this is what will i do in the future i hoping that i become a web developer as my future job</p>
+          </div>
+    </section>
+
+    <!-- Portofolio Page -->
+    <section id= portofolio class="portofolio">
+        <div class="textaligncenter">
+            <h1>
+                My Portofolio
+            </h1>
+            <div class="spasi">
+                <p>
+                    here my latest project from prototyping, mockup,console application, and windows form application
+                </p>
+            </div>
+            <div class="container">
+                <div class="gallery">
+                    <a href="assets/img/img1-big.png" data-lightbox="mygallery">
+                    <img src="assets/img/img1.png" alt="img1"></a>
+                    <div class="desc">
+                        This is a project for my final exam at university
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a href="assets/img/img2-big.png" data-lightbox="mygallery">
+                        <img src="assets/img/img2.png" alt="img2"></a>
+                    <div class="desc">
+                        This is a project for my final exam at university
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a href="assets/img/img3-big.png" data-lightbox="mygallery">
+                        <img src="assets/img/img3.png" alt="img3"></a>
+                    <div class="desc">
+                        This is for my older sister to make a simple application
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a href="assets/img/img4-big.png" data-lightbox="mygallery">
+                        <img src="assets/img/img4.png" alt="img4"></a>
+                    <div class="desc">
+                        This is a project for my final exam at university
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a href="assets/img/img5-big.png" data-lightbox="mygallery">
+                        <img src="assets/img/img5.png" alt="img5"></a>
+                    <div class="desc">
+                        This is a prototyping for school for customer site
+                    </div>
+                </div>
+                <div class="gallery">
+                    <a href="assets/img/img6-big.png" data-lightbox="mygallery">
+                        <img src="assets/img/img6.png" alt="img6"></a>
+                    <div class="desc">
+                        This is a prototyping for school for admin site
+                    </div>
+                </div>
+            </div>
+            <div class="spasi">
+                <p>
+                    This is my CV go check it out
+                </p>
+            </div>
+            <a href="https://www.canva.com/design/DAEcRBmK4A4/ZN1hyOXOw0biVWE2hm1z9g/view?utm_content=DAEcRBmK4A4&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank" class="button">My CV</a>
+        </div>
+    </section>
+    <!-- Contact Me -->
+    <section class="contact" id="contact" style="height: 50vh;">
+        <div class="column1" style="background-color:#dc965a;">
+            <div class="negah">
+                <h2>Contact me</h2>
+                <div class="format">
+                    <div class="">Get in Touch</div>
+                    <div class="head">Name</div>
+                    <div class="sub-title">Jonathan Isaac Tanojo</div>
+                    <div class="head">Address</div>
+                    <div class="sub-title">UC Main Tower Floor 5,Surabaya,Indonesia</div>
+                    <div class="head">Phone Number </div>
+                    <div class="sub-title">+6281-1318-0805 </div>
+                    <div class="head">Line/Instagram </div>
+                    <div class="sub-title">@jonathantanojo </div>
+                    <div class="head">Email </div>
+                    <div class="sub-title">jisaactanojo@student.ciputra.ac.id </div>
+                </div>
+            </div>
+        </div>
+        <div class="column1" style="background-color:rgb(255, 255, 255);">
+            <div class="text" style="font-family: Nunito;">Message me</div>
+            <div class="negah">
+                <form action="#">
+                    <div class="fields" style="margin: 20px;">
+                        <div class="field name">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="field email">
+                            <input type="email" placeholder="Email" required>
+                        </div>    
+                    </div>
+                    <div class="field" style="margin: 20px;">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="field textarea" style="margin: 20px;"">
+                        <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
+                    </div>
+                    <div class="button-area" style="margin: 20px;"">
+                        <button type="submit">Send message</button>
+                    </div>           
+                </form>
+            </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footerwhite">
+        <div class="footer">
+            <p>© 2021 copyright By Jonathan Isaac Tanojo</p>
+        </div>        
+    </footer>
+</body>
+</html>
